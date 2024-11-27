@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Pane prefHeight="509.0" prefWidth="692.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="cross" fitHeight="510.0" fitWidth="744.0" layoutX="-3.0" layoutY="-5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../interfbackdrop.jpg" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="513.0" prefWidth="128.0" style="-fx-background-color: azure;">
+               <children>
+                  <Button fx:id="logout2" layoutX="1.0" layoutY="404.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="125.0" style="-fx-background-color: teal;" text="Log out" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="viewairlines" layoutX="1.0" layoutY="118.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="125.0" style="-fx-background-color: teal;" text="View Airlines" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="31.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="confirm2" layoutX="-1.0" layoutY="453.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="63.0" style="-fx-background-color: teal;" text="Confirm" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancel2" layoutX="65.0" layoutY="453.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="61.0" style="-fx-background-color: teal;" text="Cancel" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="viewusers" layoutX="1.0" layoutY="168.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="125.0" style="-fx-background-color: teal;" text=" Users" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="revenue" layoutX="1.0" layoutY="218.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="125.0" style="-fx-background-color: teal;" text="Revenue" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="viewflights2" layoutX="1.0" layoutY="268.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="125.0" style="-fx-background-color: teal;" text="View Flights" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="viewairlinespanel" layoutX="175.0" layoutY="14.0" prefHeight="469.0" prefWidth="530.0" style="-fx-background-color: steelblue;" visible="false">
+               <children>
+                  <Label layoutX="211.0" layoutY="13.0" text="Airlines" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="airlinetable" layoutX="124.0" layoutY="119.0" prefHeight="233.0" prefWidth="283.0" style="-fx-background-color: azure;" />
+                  <Button fx:id="addairline" layoutX="124.0" layoutY="85.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="115.0" style="-fx-background-color: green;" text="Add Airline" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="removeairline" layoutX="298.0" layoutY="85.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="109.0" style="-fx-background-color: red;" text="Remove airline" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Pane fx:id="addairlinepanel" layoutX="113.0" layoutY="352.0" prefHeight="114.0" prefWidth="318.0" style="-fx-background-color: midnightblue;" visible="false">
+                     <children>
+                        <TextField fx:id="airlinename" layoutX="108.0" layoutY="27.0" prefHeight="25.0" prefWidth="192.0" promptText="Airline Name" />
+                        <Label layoutX="14.0" layoutY="29.0" text="Enter Name" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="register" layoutX="16.0" layoutY="63.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="93.0" style="-fx-background-color: lightblue;" styleClass="azre" text="Register" textFill="#317f97">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="addairlineprompt" layoutX="135.0" layoutY="73.0" textFill="#09ff08" />
+                        <Label fx:id="addairlineerror" layoutX="109.0" layoutY="6.0" text="Field is empty" textFill="RED" visible="false" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="removeairlinepanel" layoutX="101.0" layoutY="352.0" prefHeight="114.0" prefWidth="358.0" style="-fx-background-color: darkslategray;" visible="false">
+                     <children>
+                        <TextField fx:id="airlineID" layoutX="72.0" layoutY="14.0" prefHeight="25.0" prefWidth="61.0" promptText="AirlineID" />
+                        <Label layoutX="14.0" layoutY="17.0" text="Enter ID" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="remove" layoutX="17.0" layoutY="70.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="93.0" style="-fx-background-color: red;" styleClass="azre" text="Remove" textFill="WHITE" visible="false">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="set2" layoutX="136.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: steelblue;" text="set" textFill="WHITE" />
+                        <Button fx:id="cancelairlineremove" layoutX="115.0" layoutY="77.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="cancel" visible="false" />
+                        <Button fx:id="confirmairlineremove" layoutX="178.0" layoutY="77.0" mnemonicParsing="false" text="confirm" visible="false" />
+                        <Label fx:id="warninglabel" layoutX="16.0" layoutY="49.0" text="Warning: All flights associated with airline will be cleared" textFill="WHITE" visible="false" />
+                        <Label fx:id="airlineiderror" layoutX="192.0" layoutY="18.0" textFill="RED" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="viewuserspanel" layoutX="186.0" layoutY="22.0" prefHeight="469.0" prefWidth="530.0" style="-fx-background-color: darkslategray;" visible="false">
+               <children>
+                  <Label layoutX="222.0" layoutY="13.0" text="Users" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="usertable" layoutX="122.0" layoutY="62.0" prefHeight="233.0" prefWidth="287.0" style="-fx-background-color: skyblue;" />
+                  <Pane layoutX="6.0" layoutY="310.0" prefHeight="155.0" prefWidth="512.0" style="-fx-background-color: cadetblue;">
+                     <children>
+                        <TextField fx:id="userid" layoutX="109.0" layoutY="13.0" prefHeight="25.0" prefWidth="53.0" promptText="User ID" />
+                        <Label layoutX="14.0" layoutY="17.0" text="Enter User ID" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="suspension" layoutX="10.0" layoutY="42.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="95.0" style="-fx-background-color: yellow;" styleClass="azre" text="Suspension" visible="false">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="removeuser" layoutX="403.0" layoutY="9.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: red;" text="Remove User" textFill="WHITE" visible="false">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="set3" layoutX="164.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: mediumblue;" text="set" textFill="WHITE" />
+                        <Pane fx:id="suspensionpanel" layoutX="9.0" layoutY="73.0" prefHeight="76.0" prefWidth="200.0" style="-fx-background-color: teal;" visible="false">
+                           <children>
+                              <Label fx:id="suspensionprompt" layoutX="14.0" layoutY="54.0" textFill="WHITE" />
+                              <Button fx:id="suspend" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="77.0" style="-fx-background-color: brown;" text="Suspend" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="unsuspend" layoutX="110.0" layoutY="15.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="74.0" style="-fx-background-color: green;" text="Unsuspend" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="removeuserpanel" layoutX="257.0" layoutY="40.0" prefHeight="108.0" prefWidth="238.0" style="-fx-background-color: teal;" visible="false">
+                           <children>
+                              <Label layoutX="6.0" layoutY="32.0" text="Warning: All user bookings will be deleted." textFill="RED" />
+                              <Button fx:id="cancel3" layoutX="51.0" layoutY="53.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="63.0" text="Cancel" />
+                              <Button fx:id="confirm3" layoutX="126.0" layoutY="53.0" mnemonicParsing="false" text="Confirm" />
+                           </children>
+                        </Pane>
+                        <Label fx:id="useriderror" layoutX="209.0" layoutY="18.0" textFill="RED" />
+                        <Label fx:id="userdeleteprompt" layoutX="257.0" layoutY="18.0" textFill="#00ff44" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="revenuereportpanel" layoutX="230.0" layoutY="102.0" prefHeight="267.0" prefWidth="420.0" style="-fx-background-color: azure;" visible="false">
+               <children>
+                  <Pane prefHeight="72.0" prefWidth="420.0" style="-fx-background-color: darkblue;">
+                     <children>
+                        <Label layoutX="189.0" layoutY="19.0" text="REVENUE REPORT" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="airlinebox1" layoutX="14.0" layoutY="36.0" prefHeight="7.0" prefWidth="114.0" style="-fx-background-color: lightblue;" />
+                        <Label layoutX="15.0" layoutY="14.0" text="select Airline" textFill="WHITE" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="14.0" layoutY="144.0" text="Total Bookings:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="188.0" text="Active Flights:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="233.0" text="Revenue generated:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalbookings" layoutX="340.0" layoutY="144.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="activeflights" layoutX="340.0" layoutY="188.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="revenuegenerated" layoutX="293.0" layoutY="233.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="airlinenamelabel" layoutX="14.0" layoutY="72.0" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="rescheduleflightspanel" layoutX="168.0" layoutY="2.0" prefHeight="509.0" prefWidth="545.0" style="-fx-background-color: purple;" visible="false">
+               <children>
+                  <Label layoutX="181.0" layoutY="23.0" text="FLIGHT MANAGEMENT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="rescheduletable" layoutX="12.0" layoutY="50.0" prefHeight="213.0" prefWidth="522.0" style="-fx-background-color: slategray;" />
+                  <Pane layoutY="265.0" prefHeight="224.0" prefWidth="545.0" style="-fx-background-color: lightblue;">
+                     <children>
+                        <TextField fx:id="rescheduleid" layoutX="61.0" layoutY="34.0" prefHeight="25.0" prefWidth="64.0" promptText="Flight ID" />
+                        <Label layoutX="9.0" layoutY="38.0" text="Enter ID">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="set5" layoutX="127.0" layoutY="34.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: darkblue;" text="Reschedule" textFill="WHITE" />
+                        <Label fx:id="rescheduleerrorlabel" layoutX="105.0" layoutY="121.0" textFill="RED" />
+                        <Pane fx:id="subpanel" layoutX="283.0" prefHeight="224.0" prefWidth="262.0" style="-fx-background-color: steelblue;" visible="false">
+                           <children>
+                              <DatePicker fx:id="date" layoutX="121.0" layoutY="7.0" prefHeight="25.0" prefWidth="71.0" promptText="Date" />
+                              <Label layoutX="8.0" layoutY="7.0" text="Enter Date">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="9.0" layoutY="48.0" text="Enter Hour:Min">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Spinner fx:id="hrspinner" layoutX="126.0" layoutY="46.0" prefHeight="0.0" prefWidth="57.0" />
+                              <Spinner fx:id="minspinner" layoutX="193.0" layoutY="46.0" prefHeight="0.0" prefWidth="57.0" />
+                              <Label layoutX="14.0" layoutY="85.0" text="Select Airline">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="airlinebox2" layoutX="127.0" layoutY="82.0" prefHeight="25.0" prefWidth="129.0" style="-fx-background-color: darkblue;" />
+                              <Button fx:id="reschedule" layoutX="10.0" layoutY="114.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="94.0" style="-fx-background-color: green;" text="Reschedule" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="cancel4" layoutX="128.0" layoutY="118.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="53.0" style="-fx-background-color: darkslategray;" text="cancel" textFill="WHITE" visible="false" />
+                              <Button fx:id="confirm4" layoutX="184.0" layoutY="118.0" mnemonicParsing="false" style="-fx-background-color: darkslategray;" text="confirm" textFill="WHITE" visible="false" />
+                              <Button fx:id="add" layoutX="21.0" layoutY="184.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="72.0" style="-fx-background-color: green;" text="Add" textFill="WHITE" visible="false">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="minprice" layoutX="134.0" layoutY="159.0" prefHeight="25.0" prefWidth="125.0" promptText="Min Price" />
+                              <TextField fx:id="seats" layoutX="134.0" layoutY="188.0" prefHeight="25.0" prefWidth="71.0" promptText="Total Seats" />
+                              <Button fx:id="cancel5" layoutX="-1.0" layoutY="159.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="cancel" visible="false" />
+                              <Button fx:id="confirm5" layoutX="57.0" layoutY="159.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" text="confirm" visible="false" />
+                              <ChoiceBox fx:id="from" layoutX="116.0" layoutY="131.0" prefHeight="25.0" prefWidth="68.0" />
+                              <ChoiceBox fx:id="to" layoutX="188.0" layoutY="131.0" prefHeight="25.0" prefWidth="68.0" />
+                              <Label fx:id="fromtolabel" layoutX="129.0" layoutY="110.0" text="From           To">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Label fx:id="rescheduleprompt" layoutX="25.0" layoutY="73.0" text="Flight rescheduled." textFill="#13a13c" visible="false" />
+                     </children>
+                  </Pane>
+                  <Button fx:id="addf" layoutX="445.0" layoutY="6.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="88.0" style="-fx-background-color: yellow;" text="Add Flight">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

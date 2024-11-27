@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="692.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="503.0" fitWidth="356.0" layoutX="-1.0" layoutY="2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../login_backdrop.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="162.0" fitWidth="363.0" layoutX="-3.0" layoutY="364.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../flightlogo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane fx:id="cna" prefHeight="481.0" prefWidth="338.0" style="-fx-background-color: #171717;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="27.0" layoutY="282.0" text="Username" textFill="#5ee0e5" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="345.0" text="Password" textFill="#5ee0e5" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="133.0" layoutY="283.0" prefHeight="32.0" prefWidth="169.0" promptText="Username" />
+            <PasswordField fx:id="password" layoutX="133.0" layoutY="344.0" prefHeight="32.0" prefWidth="170.0" promptText="Password" />
+            <Button fx:id="login" layoutX="99.0" layoutY="410.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="130.0" style="-fx-background-color: #5ee0e5;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Hyperlink fx:id="signuphl" layoutX="107.0" layoutY="463.0" text="Create new account">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Hyperlink>
+            <Label fx:id="loginerror" layoutX="62.0" layoutY="245.0" textFill="#ff0202" />
+            <ImageView fitHeight="219.0" fitWidth="333.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../lockicon.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="signupform" layoutX="-362.0" prefHeight="513.0" prefWidth="692.0" style="-fx-background-color: #757575;" visible="false">
+               <children>
+                  <ImageView fitHeight="530.0" fitWidth="699.0" layoutX="1.0" layoutY="3.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../signup_backdrop.jpg" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink fx:id="loginhl" layoutX="532.0" layoutY="484.0" text="Back to Log in" textFill="#ff0988">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label layoutX="115.0" layoutY="170.0" text="THANK YOU FOR REGISTERING" textFill="#c62edd">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="239.0" layoutY="216.0" text="WITH" textFill="#c62edd">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="341.0" layoutY="208.0" text="FLIGHT!" textFill="#e02267">
+                     <font>
+                        <Font name="System Bold" size="42.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane fx:id="signuppanel" layoutX="72.0" layoutY="31.0" prefHeight="440.0" prefWidth="570.0" style="-fx-background-color: DARKSLATEGRAY;">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="257.0" visible="false" />
+                        <Label layoutX="177.0" layoutY="44.0" text="SIGN UP FORM" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutY="101.0" prefHeight="299.0" prefWidth="570.0" style="-fx-background-color: GREY;">
+                           <children>
+                              <TextField fx:id="fn" layoutX="244.0" layoutY="63.0" prefHeight="25.0" prefWidth="155.0" promptText="First Name" />
+                              <TextField fx:id="ln" layoutX="244.0" layoutY="106.0" prefHeight="25.0" prefWidth="155.0" promptText="Last Name" />
+                              <Label layoutX="72.0" layoutY="65.0" text="Enter First Name" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="73.0" layoutY="108.0" text="Enter Last Name" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="setun" layoutX="244.0" layoutY="148.0" prefHeight="25.0" prefWidth="220.0" promptText="Username" />
+                              <Label layoutX="74.0" layoutY="151.0" text="Enter Username" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="setpass" layoutX="244.0" layoutY="192.0" prefHeight="25.0" prefWidth="221.0" promptText="Password" />
+                              <Label layoutX="75.0" layoutY="195.0" text="Enter Password" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="signup" layoutX="193.0" layoutY="236.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="184.0" style="-fx-background-color: TEAL;" text="SIGN UP" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="17.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="signuperror" layoutX="216.0" layoutY="32.0" textFill="#e41616" />
+                           </children></AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
